@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Interest Calculator</title>
+  </head>
+  <body>
+    <div class="main__container">
+      <div class="input__container">
+        <h2 class="title">BMI CALCULATION</h2>
+        <div class="input__field">
+          <label for="">Name:</label>
+          <input class="input" type="text" name="" id="name" required />
+        </div>
+        <div class="input__field">
+          <label for="">Gender:</label>
+          <select class="input" name="gender" id="gender">
+            <option value="0">Select...</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="input__field">
+          <label for="">Weight:</label>
+          <input class="input" type="number" name="" id="weight" required />
+        </div>
+        <div class="input__field">
+          <label for="">Height:</label>
+          <input class="input" type="number" name="" id="height" required />
+        </div>
+        Result : <span id="result"></span><br />
+        <div class="input__field">
+          <button class="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

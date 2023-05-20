@@ -18,7 +18,7 @@ compute.addEventListener('click', function(){
     } else if(T == 1){
         result.innerHTML = `<mark> Your Simple Interest on N${P} for ${T}year at ${R}% rate is N${interest}`
     }else {
-            result.innerHTML = `<mark> Your Simple Interest on N${P} for ${T}years at ${R}% rate is N${interest}`
+        result.innerHTML = `<mark> Your Simple Interest on N${P} for ${T}years at ${R}% rate is N${interest}`
     }
   
 });
