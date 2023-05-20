@@ -4,7 +4,6 @@ const rate = document.getElementById('rate');
 
 const result = document.getElementById('result');
 
-// const compute = document.getElementById('btn');
 
 document.addEventListener('click', function(){
     P = principal.value;
@@ -15,11 +14,10 @@ document.addEventListener('click', function(){
     if (P <= 0) {
         alert('Please enter a positive number!');
         document.getElementById("principal").focus();
-    }
-    else {
+    }else if(T === 1) {
+        result.innerHTML = `Your Simple Interest on "<mark>"N${P} for ${T}year at ${R}% rate is N${interest}`
+    }else {
         result.innerHTML = `Your Simple Interest on "<mark>"N${P} for ${T}years at ${R}% rate is N${interest}`
     }
-
-
   
 });
