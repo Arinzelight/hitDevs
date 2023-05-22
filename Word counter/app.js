@@ -5,15 +5,11 @@ inputText.addEventListener("input", countCharacters);
 
 
 function countCharacters() {
-    let charCount = inputText.value.length;
-    charCountElement.innerHTML = "Word Count: " + charCount;
+    let value = inputText.value.trim();
+    const wordCount = value ? value.split("") : [];
+    let charCount = value.length;
+    charCountElement.innerHTML = `character count: ${charCount} Word count: ${wordCount.length}`;
 
 
-    if(charCount % 61 === 0 ){ 
-        alert(`Total Characters is now ${charCount} `);
-    
-
-
-    }
 }
 
