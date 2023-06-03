@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #333;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-delay: .5s;
+    animation-iteration-count:infinite;
+
+}
+
+@keyframes moving 
+{
+    0%{background-color: crimson; left: 0px; top: 0px; }
+    25%{background-color: yellow; left: 94%; top: 0px;}
+    50%{background-color: blue; left: 94%; top: 490px;}
+    75%{background-color: purple; left: 0px; top: 490px;}
+    100%{background-color: crimson; left: 0px; top: 0px;}  
+}
+
+
+@keyframes slideIn
+ {
+    from{transform: translateX(-100%)}
+
+    to{transform: translateX(100%);}
+
+    
+}
+.heading-1{
+    color: rgb(182, 68, 91);
+    padding: 2px 0px;
+    background: #333;
+    padding-top: 10px;
+    animation-name:slideIn;
+    animation-duration:14s;
+    animation-timing-function: ease-in;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    /* animation-direction: alternate-reverse */
+    
+}

@@ -82,6 +82,7 @@ a{
   color: rgb(29, 25, 40);
   outline: none;
   padding: 1.25rem;
+
   
 }
 
@@ -114,9 +115,9 @@ a{
 }
 
 .word__count-sub1{
-  margin-left: 6.8rem;
+  margin: 0 4rem;
   background-color: white;
-  width: fit-content;
+  width: 65%;
   margin-top:.3rem;
   padding: .2rem;
   font-weight: bold;

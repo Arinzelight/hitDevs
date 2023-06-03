@@ -11,7 +11,7 @@ const levels = {
     hard: 1
 }
 // to change level
-const currentLevel = levels.easy
+const currentLevel = levels.medium
 
 let time = currentLevel;
 let score = 0;
@@ -135,3 +135,6 @@ function checkStatus(){
         score = -1
     }
 } 
+
+const highSCore = JSON.stringify(score)
+localStorage.setItem(highSCoreValue)
