@@ -29,15 +29,16 @@
 
 @keyframes slideIn
  {
-    from{transform: translateX(-100%)}
+    0%{transform: translate(50%, 0)}
 
-    to{transform: translateX(100%);}
+    100%{transform: translate(-90%, 0);}
 
     
 }
 .heading-1{
-    color: rgb(182, 68, 91);
-    padding: 2px 0px;
+    color: rgb(193, 188, 189);
+    width: 180%;
+    /* padding: 2px 0px; */
     background: #333;
     padding-top: 10px;
     animation-name:slideIn;
